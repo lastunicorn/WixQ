@@ -34,7 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             So, if the application is already installed, the condition should be automatically true.
             This is done by the "Installed OR (NOT Installed AND (...))" part.
             -->
-            <![CDATA[Installed OR (NOT Installed AND (IS_CONDITION_TRUE = "no"))]]>
+            <![CDATA[Installed OR (NOT Installed AND (IS_CONDITION_TRUE = "yes"))]]>
         </Condition>
 
 		<Feature Id="ProductFeature" Title="StartCondition" Level="1">
