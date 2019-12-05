@@ -1,0 +1,4 @@
+ImmediateCustomAction
+==============================================================================
+
+Q: How to create an immediate custom action?

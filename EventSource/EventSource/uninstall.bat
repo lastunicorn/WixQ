@@ -1,0 +1,1 @@
+msiexec /x EventSource.msi /l*vx uninstall.log

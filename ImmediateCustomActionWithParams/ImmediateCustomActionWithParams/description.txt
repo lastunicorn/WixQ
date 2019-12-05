@@ -1,0 +1,4 @@
+ImmediateCustomAction with Params
+==============================================================================
+
+Q: How to create an immediate custom action that receives parameters?

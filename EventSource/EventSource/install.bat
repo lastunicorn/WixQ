@@ -1,0 +1,1 @@
+msiexec /i EventSource.msi /l*vx install.log

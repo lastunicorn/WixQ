@@ -1,0 +1,1 @@
+msiexec /x ImmediateCustomActionWithParams.msi /l*vx uninstall.log

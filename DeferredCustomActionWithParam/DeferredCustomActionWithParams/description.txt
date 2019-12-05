@@ -1,0 +1,4 @@
+DeferredCustomAction with Parameters
+==============================================================================
+
+Q: How to create a deferred custom action that receives parameters?

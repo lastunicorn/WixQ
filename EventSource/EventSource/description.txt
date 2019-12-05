@@ -1,0 +1,7 @@
+EventSource
+==============================================================================
+
+Q: How to create an event source in Windows Events?
+
+This installer will create a new Log and a new Event Source in Windows Evetns.
+On uninstall they will be removed.

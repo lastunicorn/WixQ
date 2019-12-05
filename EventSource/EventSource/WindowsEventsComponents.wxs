@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+WixQ
+Copyright (C) 2019 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+
+        <PropertyRef Id="NETFRAMEWORK40FULLINSTALLROOTDIR64"/>
+
+        <ComponentGroup Id="WindowsEventsComponents" Directory="INSTALLDIR">
+
+            <Component Id="DescriptionFileComponent" Guid="4F4D8063-7695-4E3B-A967-352AC0DEA1A3" KeyPath="yes">
+                <File Id="DescriptionFile"  Source="$(var.ProjectDir)description.txt"/>
+            </Component>
+
+            <Component Id="CategoryMessageFileComponent" Guid="9C056793-4CB2-4087-89CA-9627A8227C42" KeyPath="yes">
+                <File Id="CategoryMessageFile"  Source="$(var.ProjectDir)\category-message-file.dll"/>
+            </Component>
+
+            <Component Id="CreateEventSourceComponent" Guid="D7B0F20D-796C-4B90-9961-336B62C8A704" KeyPath="yes">
+                <Util:EventSource
+                    xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+                    Name="[LOG_EVENT_SOURCE]"
+                    Log="[LOG_NAME]"
+                    EventMessageFile="[NETFRAMEWORK40FULLINSTALLROOTDIR64]EventLogMessages.dll"
+                    CategoryMessageFile="[INSTALLDIR]category-message-file.dll"
+                    CategoryCount="2"/>
+            </Component>
+
+        </ComponentGroup>
+
+    </Fragment>
+</Wix>

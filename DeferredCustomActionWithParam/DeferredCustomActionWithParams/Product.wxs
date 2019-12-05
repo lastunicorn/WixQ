@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+WixQ
+Copyright (C) 2019 Dust in the Wind
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="WixQ Deferred Custom Action with Params" Language="1033" Version="1.0.0.0" Manufacturer="Dust in the Wind" UpgradeCode="2cbfe05c-2fed-4c0f-ba87-304562cfa344">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+        <!-- Properties -->
+        <Property Id="MESSAGE1" Value="This is the first message."/>
+        <Property Id="MESSAGE2" Value="This is the second message."/>
+
+        <Feature Id="ProductFeature" Title="DeferredCustomActionWithParams" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+
+        <Binary Id="CustomActionsBinary" SourceFile="$(var.DeferredCustomActionWithParams.CustomActions.TargetDir)$(var.DeferredCustomActionWithParams.CustomActions.TargetName).CA.dll" />
+
+        <InstallExecuteSequence>
+            <!-- Here we use the custom actions created earlier. -->
+            <Custom Action="LogSomethingParameters" Before="LogSomething"/>
+            <Custom Action="LogSomething" After="InstallFiles"/>
+        </InstallExecuteSequence>
+
+    </Product>
+</Wix>
