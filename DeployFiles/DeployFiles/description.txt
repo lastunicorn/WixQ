@@ -1,0 +1,8 @@
+DeployFiles
+==============================================================================
+
+Q: How to deploy files?
+
+This tutorial contains a WiX project that deploys a single file in "c:\Program Files\Dust in the Wind\Deploy Files Example" directory.
+
+The code contains comments with explanations. Follow the "Step X" comments.
