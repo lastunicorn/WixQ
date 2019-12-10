@@ -28,3 +28,7 @@ Below is a list of the projects contained in this repo. Each one is the answer t
 ## StartCondition
 - Q: How to add a start contition?
 - start condition
+
+## DeployFiles
+- Q: How to deploy files?
+- deploy, file, directory, component, feature
