@@ -5,13 +5,13 @@ The intention is to create small and very specific tutorials that focus on only 
 # Projects
 Below is a list of the projects contained in this repo. Each one is the answer to a question.
 
-## DeferredCustomAction
-- Q: How to create a deferred custom action?
-- custom action, deferred
+## DeployFiles
+- Q: How to deploy files?
+- deploy, file, directory, component, feature
 
-## DeferredCustomAction with Parameters
-- Q: How to create a deferred custom action that receives parameters?
-- custom action, deferred, parameters
+## StartCondition
+- Q: How to add a start contition?
+- start condition
 
 ## ImmediateCustomAction
 - Q: How to create an immediate custom action?
@@ -21,14 +21,14 @@ Below is a list of the projects contained in this repo. Each one is the answer t
 - Q: How to create an immediate custom action that receives parameters?
 - custom action, immediate, parameters
 
+## DeferredCustomAction
+- Q: How to create a deferred custom action?
+- custom action, deferred
+
+## DeferredCustomAction with Parameters
+- Q: How to create a deferred custom action that receives parameters?
+- custom action, deferred, parameters
+
 ## EventSource
 - Q: How to create a log together with an event source in Windows Events?
 - windows events, event source, log
-
-## StartCondition
-- Q: How to add a start contition?
-- start condition
-
-## DeployFiles
-- Q: How to deploy files?
-- deploy, file, directory, component, feature
