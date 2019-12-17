@@ -1,0 +1,8 @@
+Multiple Features
+==============================================================================
+
+Q: How to create multiple features
+
+This tutorial contains a WiX project with two fetures:
+- one deploys a single file in "c:\Program Files\Dust in the Wind\Multiple Features Example" directory.
+- the second feature creates a value in registry
