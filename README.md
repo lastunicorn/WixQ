@@ -3,7 +3,7 @@ This repo contains a number of projects that demonstrate how to do some of the m
 The intention is to create small and very specific tutorials that focus on only one aspect.
 
 # Projects
-Below is a list of the projects contained in this repo. Each one is the answer to a question.
+Below is a list of the projects contained in this repo. Each one is the answer to one question.
 
 ## DeployFiles
 - Q: How to deploy files?
