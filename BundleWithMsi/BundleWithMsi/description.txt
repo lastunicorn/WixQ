@@ -1,0 +1,9 @@
+﻿BundleWithMsi
+==============================================================================
+
+Q: How to create a bundle that contains msi files.
+
+This tutorial contains a bundle that installs two .msi files.
+
+
+The code contains comments with explanations. Follow the "Step X" comments.

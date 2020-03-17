@@ -1,0 +1,6 @@
+﻿Installer 2 for the BundleWithMsi project
+==============================================================================
+
+Q: How to create a bundle that contains msi files?
+
+This is the second msi that is installed by the BundleWithMsi bundle.
