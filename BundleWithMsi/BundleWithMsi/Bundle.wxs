@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 
-    <Bundle Name="BundleWithMsi" Version="1.0.0.0" Manufacturer="HP Inc." UpgradeCode="eef1a17e-e0ed-432c-b45b-6f5510e8ecb4">
+    <Bundle Name="BundleWithMsi" Version="1.0.0.0" Manufacturer="Dust in the Wind" UpgradeCode="eef1a17e-e0ed-432c-b45b-6f5510e8ecb4">
 
         <!--
         ====================================================================================

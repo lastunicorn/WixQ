@@ -1,0 +1,6 @@
+﻿Installer 1 for the BundleWithGui project
+==============================================================================
+
+Q: How to create a bundle that provides a WPF GUI?
+
+This is the first msi that is installed by the BundleWithGui bundle.
