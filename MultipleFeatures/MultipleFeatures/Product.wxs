@@ -7,7 +7,9 @@
         <MediaTemplate />
 
         <!--
-        The installer can be split in multiple features.
+        This is a demo of how to create multiple features.
+        
+        A feature is the smallest unit that can be selected by the user to be installed.
         At run time, the user can decide which features to install.
         
         If chosen for installation, a feature will install all its components.
@@ -15,7 +17,7 @@
         If this is needed, multiple features must be created.
         -->
 
-        <Feature Id="ProductFeature" Title="Deploy Files" Level="1">
+        <Feature Id="ProductFeature" Title="Main Files" Level="1">
             <ComponentGroupRef Id="FileComponents" />
         </Feature>
 
