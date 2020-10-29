@@ -1,3 +1,9 @@
+# Donations
+
+If you like my work and want to support me, you can buy me a coffee:
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y62EZ8H)
+
 # WixQ
 This repo contains a number of projects that demonstrate how to do some of the most common tasks in Wix Toolset.
 The intention is to create small and very specific tutorials that focus on only one aspect.
